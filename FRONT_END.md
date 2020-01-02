@@ -8,13 +8,12 @@
 
  前端 —— 技术圈的娱乐圈 ，在大前端的趋势下，以往的前端开发模式已经不能很好地承载实际的项目需求，我们需要一系列方案来使我们的项目变得规范、可配置、优化等。本文就针对这个问题做简单分析，并给出一系列的解决方案。
 
-
 ## 了解我们目前所处的阶段
 
 首先我们需要认识到，前端是一种技术问题相对少、工程化问题相对多的软件开发领域。前端开发虽然相对简单，但是也会遇到不少问题：
 
 1. 大体量：多功能、多页面、多状态、多系统
-2. 大规模：多人甚至多团队参与开发
+2. 大规模：**多人**甚至多团队参与开发
 3. 高性能：CDN、缓存、请求合并、按需加载、同步/异步加载、首屏渲染
 
 ## 什么是技术架构
@@ -26,7 +25,7 @@
 说到这里，我们可以梳理下我们团队目前的项目和团队背景这些特点：
 
 * 项目的特点：**大同小异** 。基本上都是查询、表单、语音文件上传这么3种页面。目前团队每个项目都是针对前端每个项目重新去做这些东西（比如 `ctrl + c，v` ）   
-* 团队的特点： **规模小** 。虽然目前前端研发成员不多，但是相信公司会做**大**做**强** = =，那么大家就知道规模化会带来沟通成本的提高，我们希望尽可能地降低因此带来地成本提升来实现规模效应
+* 团队的特点： **规模小** 。虽然目前前端研发成员不多，但是相信公司会做**大**做**强** = =，那么大家就知道规模化会带来沟通成本的提高，我们希望尽可能地降低因此带来的成本提升来实现规模效应
 
 ## 解决方案
 
@@ -51,25 +50,22 @@
 
 对于项目来说，我们可以把可复用的部分抽离出来，通过标准化来提高它的复用率。比如目前在构建的通用业务组件库 k-view  包含了各个业务项目中可复用的组件；再比如说部署、监控等服务抽离出来，做成独立的服务，提供各个业务线来使用（k8s）。所以说标准化后的项目，我们不必再做重复的技术选型，并且可以方便地利用各种公共服务来实现最终 `提高效率的目的` 。
 
-## 自动化 （...... ）
+## 自动化 （......）
 
-## 工程化实践 [kst-cli | Standard Tooling for Vue.js Development](https://www.npmjs.com/package/kst-cli)
+## 工程化实践 
 
-1. 规范（相关文档）
-
-2. 技术选型
-    - [Vue](https://cn.vuejs.org/index.html)
-3. IDE 
-    - [Visual Studio Code](https://code.visualstudio.com/)    
-        - 环境配置： ESlint 、 Vetur
-4. 开发环境 
-    - Chrome + devTool 
-
-5. 包源管理
+* 构建工具 [kst-cli | Standard Tooling for Vue.js Development ](https://www.npmjs.com/package/kst-cli)
+* 通用类库 [kst-util | Promise based HTTP client for the browser and node.js](https://www.npmjs.com/package/kst-util)
+* 技术选型 [Vue](https://cn.vuejs.org/index.html)
+* IDE [Visual Studio Code](https://code.visualstudio.com/)    
+    - Vetur
+    - Vue-2-Snippets
+    - vue-beautify
+    - ESLint
+* 开发环境 Chrome 
+    - ![vue-devtool.png](./images/vue-devtool.png)
+* 包源管理
     - [npm](https://www.npmjs.com/)    
     - [nrm](https://www.npmjs.com/package/nrm)    
     - [nvm](https://www.npmjs.com/package/nvm)    
-
-6. 版本控制 
-    - Git
-
+* 版本控制 Git
