@@ -103,5 +103,4 @@
 
 ---
 
- ![weixin.jpg](./images/weixin.png) 
- ![alipay.png](./images/alipay.png) 
+ ![weixin.jpg](./images/weixin.png) ![alipay.png](./images/alipay.png) 
