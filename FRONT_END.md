@@ -69,3 +69,34 @@
     - [nrm](https://www.npmjs.com/package/nrm)    
     - [nvm](https://www.npmjs.com/package/nvm)    
 * 版本控制 Git
+
+
+### **kst-cli**
+可以当作简易版vue-cli 来看，目前支持的模板有` vue 、 react `模板。其中vue模板支持的皮肤定制目前是两套实现方案:
+
+![kst-1.png](./images/kst-1.png)
+
+- Static compilation with sass-resource-loader （单一皮肤编译 , 全局注入通用类库 [kst-util](https://www.npmjs.com/package/kst-util) ）
+
+
+- Dynamic compilation with gulp （动态编译多套皮肤，全局注入通用类库 [kst-util](https://www.npmjs.com/package/kst-util) ）
+   - 目录结构：
+
+        ![kst-web-vue.png](./images/kst-web-vue.png)
+
+   - 主题配置文件：
+
+        ![theme-config.png](./images/theme-config.png)
+
+    - Commands
+        - npm run dev 
+            
+        - npm run build  （打包）
+
+            ![build-done.png](./images/build-done.png)
+
+        - npm run commit （git提交）[【提交规范-业界比较推荐的是 angular 团队的】](https://www.conventionalcommits.org/en/v1.0.0/)
+
+            ![commit.png](./images/commit.png)
+
+
