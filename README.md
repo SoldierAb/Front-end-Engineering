@@ -54,9 +54,10 @@
 
 ## 工程化实践 
 
+* 技术选型 [Vue](https://cn.vuejs.org/index.html)
 * 构建工具 [kst-cli | Standard Tooling for Vue.js Development ](https://www.npmjs.com/package/kst-cli)
 * 通用类库 [kst-util | Promise based HTTP client for the browser and node.js](https://www.npmjs.com/package/kst-util)
-* 技术选型 [Vue](https://cn.vuejs.org/index.html)
+* 按需加载 [babel-plugin-kimport](https://www.npmjs.com/package/babel-plugin-kimport)
 * IDE [Visual Studio Code](https://code.visualstudio.com/)    
     - Vetur
     - Vue-2-Snippets
@@ -100,3 +101,7 @@
             ![commit.png](./images/commit.png)
 
 
+---
+
+ ![weixin.jpg](./images/weixin.png) 
+ ![alipay.png](./images/alipay.png) 
